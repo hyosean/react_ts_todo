@@ -9,7 +9,7 @@ const Todo = (): JSX.Element => {
 
 	const createList = (e: KeyboardEvent<HTMLInputElement>) => {
 		// value 값을 뽑을수 없는 이벤트객체는 e.textContent
-		let eventObj = e.target as HTMLInputElement;
+		let eventObj = e.target as HTMLInputElement; // if(!e.target) return
 		if (e.code === 'Enter') {
 			console.log(list);
 			let newItem: ListItem;
