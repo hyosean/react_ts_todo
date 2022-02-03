@@ -1,6 +1,6 @@
 import {useState, KeyboardEvent} from 'react';
 
-const Todo = () => {
+const Todo = (): JSX.Element => {
 	interface ListItem {
 		id: number;
 		value: string;
